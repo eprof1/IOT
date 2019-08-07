@@ -87,7 +87,7 @@
             <p>
                 These instructions will show you how to download and create the operating system for a Raspberry Pi single-board computer (SBC); and then start up the device.<br />
                 SBCs are becoming ubiquitous-examples are <a href="https://store.google.com/us/magazine/compare_thermostats?hl=en-US" class="bg-info text-white" target="_blank">Nest thermostats</a> and <a href="https://shop.ring.com/pages/doorbell-cameras" class="bg-info text-white" target="_blank">Ring doorbells</a>.<br />
-                In later assignments you will configure and add software applications to the Raspberry Pi.
+                In later assignments you will continue working with and experiencing the capabilities of the Raspberry Pi.
             </p>
             <p>After completing this assignment you will be able to:</p>
             <ol>
@@ -111,9 +111,9 @@
             This assignment reviews basic computer concepts that you will need in this course and throughout your career.
             <br />
             <p>
-                You are expected to have a working knowledge of the following utilities.<br />
+                You are expected to have a working knowledge of SBC hardware and software.<br />
                 If you do not understand how to use an item, perform a Google Search, 
-                refer to the <a href="https://learn.winona.edu/WSU_Technology_Knowledge_Base" class="bg-info text-white" target="_blank">WSU Technology Knowledge Base</a>,&nbsp; ask a teaching assistant, or ask the instructor:
+                refer to the <a href="https://learn.winona.edu/WSU_Technology_Knowledge_Base" class="bg-info text-white" target="_blank">WSU Technology Knowledge Base</a>,&nbsp; ask a teaching assistant, or ask the instructor.
             </p>
             <hr />
         </div>
@@ -133,15 +133,16 @@
                     ' folder.<br />
                 </li>
 
-                <li>Use File Explorer, find your Etcher install file, and double-click to install Etcher.</li>
+                <li>Use File Explorer, find the Etcher install file, and double-click to install Etcher.</li>
 
                 <li>Open a browser to: <a href="https://www.raspberrypi.org/downloads/raspbian/" class="bg-info text-white" target="_blank">https://www.raspberrypi.org/downloads/raspbian/</a>.<br />
-
                 </li>
 
                 <li>Download the latest ZIP file of the Raspbian Operating System with desktop<br />
-                    <a href="../FormativePi01/RaspbianWithDesktop.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspbianWithDesktop.PNG', 'popup'); return false;">
-                        <img src="../FormativePi01/RaspbianWithDesktop.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a> Raspbian With Desktop<br />
+                    <p>
+                        <a href="RaspbianWithDesktop.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspbianWithDesktop.PNG', 'popup'); return false;">
+                            <img src="RaspbianWithDesktop.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a> Raspbian With Desktop
+                    </p>
                 </li>
 
 
@@ -149,7 +150,6 @@
                 <code><span id="bPath"></span></code>
                     <script>document.getElementById("bPath").innerHTML = Path; </script>
                     ' folder.<br />
-
                 </li>
 
             </ol>
@@ -165,18 +165,23 @@
         <div id="Exercise02" class="collapse in  col-lg-12">
 
             <ol>
-                <li>Install the microSD card into the microSD card slot on the right side of your laptop.<br />
-
-                </li>
+                <li>Install the microSD card into the microSD card slot on the right side of your laptop.<br /></li>
 
                 <li>Newer laptops without microSD slots will need to see the professor or a TA to get a microSD card reader.</li>
+
                 <li>Open Etcher and make sure you see that it recognizes that you have a microSD card mounted.<br />
                     If Ether does not appear, you will need to restart your laptop.</li>
                 <li>Select the ZIP file that your downloaded earlier and Drag and Drop it into etcher where it says select image.<br />
-                    <a href="../FormativePi01/FlashMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('FlashMicroSD.PNG', 'popup'); return false;">
-                        <img src="../FormativePi01/FlashMicroSD.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Flash Raspbian to microSD<br />
+                    <p>
+                        <a href="FlashMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('FlashMicroSD.PNG', 'popup'); return false;">
+                            <img src="FlashMicroSD.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Flash Raspbian to microSD<br />
+                    </p>
                 </li>
                 <li>Then select Flash. The process will take several minutes.</li>
+                <li>Once the microSD is flashed, open File Explorer on your laptop, navigate to the root of the microSD card (probably E:), right-click and choose &#39;New&gt;Text Document&#39;</li>
+                <li>Use your name as the name of the text document, such as &#39;PatPaulson.txt&#39;<br />
+                    This will identify you as the owner of the microSD card in case it is turned into Lost 
+                    &amp; Found.</li>
             </ol>
             <hr />
         </div>
@@ -193,35 +198,43 @@
                     Plug them into the Pi at your station (We may not have keyboards and mice for everyone so please share). </li>
 
                 <li>Once the flash is complete, remove the microSD card and put it into the Pi.<br />
-                    <a href="../FormativePi01/InstallMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('InstallMicroSD.PNG', 'popup'); return false;">
-                        <img src="../FormativePi01/InstallMicroSD.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Installing microSD into the Pi<br />
+                    <p>
+                        <a href="InstallMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('InstallMicroSD.PNG', 'popup'); return false;">
+                        <img src="InstallMicroSD.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Installing microSD into the Pi<br />
+                    </p>
 
                 </li>
 
                 <li>Press the power button on the Pi, which should be on top or around the monitor in front of you. You should see a red light on the Pi.</li>
                 <li>On your monitor press the button with the colored dot.
                     <br />
-                    Note that pressing this button repeatedly swithches the monitor video signal between your laptop and the Raspberry Pi.
+                    Note that repeatedly pressing this button switches the monitor between displaying your laptop and the Raspberry Pi.
                 </li>
                 <li>Follow the on-screen instructions to set your country, language and Time-zone.<br />
                     Check the boxes for &#39;Use English language&#39; and &#39;Use US keyboard&#39;.</li>
 
                 <li>Open Notepad, choose a password (Please use <code>MagicMirror%</code>).<br />
                     Save your password in a file named  &#39;Readme.txt&#39;; in your  
+                    &#39;  
                 <code><span id="cPath"></span></code>
                     <script>document.getElementById("cPath").innerHTML = Path; </script>
                     ' folder.<br />
 
                 </li>
 
-                <li>If you forget your password you can change it under the settings.</li>
+                <li>If you forget your password you can change it in the settings, under Pi&gt;Preferences&gt;Raspberry Pi Configuration.
+                    <p>
+                        <a href="ChangePassword.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('ChangePassword.PNG', 'popup'); return false;">
+                        <img src="ChangePassword.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Changing Password<br />
+                    </p>
+                </li>
 
                 <li>Check “This screen shows a black border around the desktop” if you have a black border.</li>
                 <li>CONNECT TO WSU GUEST ONLY!!! If prompted make an account and log in.</li>
                 <li>When asked to update, click next. The update will begin, this make take a few minutes. If asked to restart, do so.</li>
                 <li>In the upper right corner of the desktop hover over the Wi-Fi signal to determine the IP address. </li>
-                <li>Store this IP address in the ReadMe.txt file that contains your password.<br />
-                    The IP address will look something like 10.20.xx.xx<br />
+                <li>Store this IP address on your laptop in the ReadMe.txt file that contains your password.<br />
+                    The IP address will be of the format: 10.20.xx.xx<br />
                     Note that the IP address will change about every 30 days.
                 </li>
                 <li>In the upper left corner, you will see the raspberry icon. click the raspberry icon, then preferences, and Raspberry Pi Configuration.</li>
@@ -248,15 +261,32 @@
                 <li>After scrot is installed, in the Terminal window type <code>scrot -h</code><br />
                     This brings up information on how to use scrot.<br />
                     Review this information.<br />
-                    Note that simply typing <code>scrot</code> in the Terminal window takes a scrot (short for SCReen shOT) and stores it in your   Raspberry Pi&#39;s&nbsp; &#39;/home/pi&#39; folder.<br />
-                    <a href="../FormativePi01/scrot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrot.PNG', 'popup'); return false;">
-                        <img src="../FormativePi01/scrot.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>scrot help<br />
+                    <p>
+                        <a href="scrot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrot.PNG', 'popup'); return false;">
+                            <img src="scrot.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>scrot help
+                    </p>
                     <br />
-                </li>
+
+                    </li>
 
                 <li>
-                    <a href="../FormativePi01/ScrotShots.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrotShots.PNG', 'popup'); return false;">
-                        <img src="../FormativePi01/ScrotShots.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Scrot Screen Shots<br />
+                    Note that simply typing <code>scrot</code> in the Terminal window takes a scrot (short for SCReen shOT) and stores it in your   Raspberry Pi&#39;s&nbsp; &#39;/home/pi&#39; folder.<br />
+                    <p><a href="ScrotShots.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrotShots.PNG', 'popup'); return false;">
+                        <img src="ScrotShots.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Scrot Screen Shots</p>
+                </li>
+
+                <li>Select Pi&gt;Accessories&gt;Text Editor, and create a file that contains only your name in 72 point font.</li>
+                <li>In the terminal window type in 
+                    <code>scrot -s</code>
+                    then click and drag the mouse to select an area around your name in the text file.
+                </li>
+                <li>Open File Manager, navigate to the /home/pi directory and rename the screen shot to YourName.png</li>
+                <li>Right click the Pi desktop, select &#39;Desktop Preferences&#39;, under the &#39;Desktop&#39; tab set the Layout to &#39;Centre image on screen&#39;, and on Picture choose the YourName.png file.<br />
+                    Then click OK.<br />
+                    <p>
+                        <a href="YourName.png" class="img-responsive img-rounded" target="popup" onclick="window.open('YourName.PNG', 'popup'); return false;">
+                            <img src="YourName.png" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Desktop Settings<br />
+                    </p>
                 </li>
             </ol>
             <hr />
@@ -273,24 +303,21 @@
             <p>
                 For this final Exercise, and to complete this assignment please read all of these instructions.<br />
                 You are submitting a screen shot of your work to the appropriate D2L Assignment folder.<br />
-                Make sure that you have the following programs running on your Raspberry Pi, depicting:
+                Make sure that you have the following programs running on your Raspberry Pi, with:
             </p>
             <ul>
-                <li>Chromium web browser, open to D2L: <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">https://winona.learn.minnstate.edu/</a>, show this course, with your name in top right,</li>
+                <li>Chromium web browser, open to D2L: <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">https://winona.learn.minnstate.edu/</a>, showing this course, with your name in the top right,</li>
                 <li>Rasberry Pi configuration, &#39;Interfaces&#39; tab, showing VNC and SSH enabled,</li>
-                <li>Network Preferences, interface tab, set to wlan0, showing settings,</li>
-                <li>Terminal window, after running <code>cat /etc/os-release</code> and <code>scrot</code> ,</li>
+                <li>Your name visible in the desktop background,</li>
+                <li>Terminal window, after running the command <code>cat /etc/os-release</code> and <code>scrot</code> ,</li>
             </ul>
             <br />
             <p>
                 Your screen shot name is of the format &#39;2019-08-07-125353_1080x1920.scrot.png&#39; and will look something like this:<br />
-                <a href="../FormativePi01/ConfigurationScreenShot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('ConfigurationScreenShot.PNG', 'popup'); return false;">
-                    <img src="../FormativePi01/ConfigurationScreenShot.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>
-                Suggested Screen Shot Format
+                <a href="ConfigurationScreenShot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('ConfigurationScreenShot.PNG', 'popup'); return false;">
+                    <img src="ConfigurationScreenShot.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a><br />
+                <br />
             </p>
-
-            <br />
-
             Use the File Manager and navigate to the &#39;/home/pi&#39; folder to find your screen shot.<br />
         </div>
         <div class="col-lg-12 text-primary">
