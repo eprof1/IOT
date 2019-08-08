@@ -17,6 +17,12 @@
     <!-- course constant file that contains semester, class, section pages -->
     <script src="../../ReadOnly/CourseConstants.js"></script>
 
+    <style type="text/css">
+        .auto-style1 {
+            text-decoration: underline;
+        }
+    </style>
+
 </head>
 
 <body onload="setVariables()">
@@ -87,7 +93,7 @@
 
             <p>
                 <a href="RaspberryPi3BPlus.png" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspberryPi3BPlus.png', 'popup'); return false;">
-                    <img src="RaspberryPi3BPlus.png" width="300" alt="Inland UNO R3" class="img-responsive img-responsive" /></a>Arduino UNO R3
+                    <img src="RaspberryPi3BPlus.png" width="300" alt="Raspberry Pi 3 B+" class="img-responsive img-responsive" /></a>Raspberry Pi 3 B+
             </p>
 
 
@@ -125,7 +131,7 @@
 
             <p>
                 <a href="RPi3Pinout.png" class="img-responsive img-rounded" target="popup" onclick="window.open('RPi3Pinout.png', 'popup'); return false;">
-                    <img src="RPi3Pinout.png" width="300" alt="Inland UNO R3" class="img-responsive img-responsive" /></a>Arduino UNO R3
+                    <img src="RPi3Pinout.png" width="300" alt="Raspberry Pi 3" class="img-responsive img-responsive" /></a>Raspberry Pi 3 B+
             </p>
 
             <hr />
@@ -137,6 +143,7 @@
 
         <div id="Exercise01" class="collapse in  col-lg-12">
             <ol>
+                <li>These steps are performed on your laptop.</li>
 
                 <li>Open a browser to: <a href="https://www.balena.io/etcher/" class="bg-info text-white" target="_blank">https://www.balena.io/etcher/ </a></li>
 
@@ -178,22 +185,24 @@
         <div id="Exercise02" class="collapse in  col-lg-12">
 
             <ol>
+                <li>These steps are performed on your laptop.</li>
+
                 <li>Install the microSD card into the microSD card slot on the right side of your laptop.<br />
                 </li>
 
                 <li>Newer laptops without microSD slots will need to see the professor or a TA to get a microSD card reader.</li>
 
-                <li>Open Etcher and make sure you see that it recognizes that you have a microSD card mounted.<br />
+                <li>Open Etcher and make sure it recognizes the microSD card.<br />
                     If Ether does not appear, you will need to restart your laptop.</li>
-                <li>Select the ZIP file that your downloaded earlier and Drag and Drop it into etcher where it says select image.<br />
+                <li>Select the ZIP file downloaded earlier and Drag and Drop it into etcher where it says &#39;Select Image&#39;.<br />
                     <p>
                         <a href="FlashMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('FlashMicroSD.PNG', 'popup'); return false;">
                             <img src="FlashMicroSD.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Flash Raspbian to microSD<br />
                     </p>
                 </li>
-                <li>Then select Flash. The process will take several minutes.</li>
-                <li>Once the microSD is flashed, open File Explorer on your laptop, navigate to the root of the microSD card (probably E:), right-click and choose &#39;New&gt;Text Document&#39;</li>
-                <li>Use your name as the name of the text document, such as &#39;PatPaulson.txt&#39;<br />
+                <li>Press the Flash button. The process will take several minutes.</li>
+                <li>After the microSD is flashed, open File Explorer on your laptop, navigate to the root of the microSD card (probably E:), right-click and choose &#39;New&gt;Text Document&#39;</li>
+                <li>Enter your name as the name of the text document, such as &#39;PatPaulson.txt&#39;<br />
                     This will identify you as the owner of the microSD card in case it is turned into Lost 
                     &amp; Found.</li>
             </ol>
@@ -219,13 +228,22 @@
 
                 </li>
 
-                <li>Press the power button on the Pi, which should be on top or around the monitor in front of you. You should see a red light on the Pi.</li>
+                <li>Press the power button on the Pi, which should be on top or around the monitor in front of you.<br />
+                    You should see a red light on the Pi, which indicates power is on.</li>
+
                 <li>On your monitor press the button with the colored dot.
                     <br />
                     Note that repeatedly pressing this button switches the monitor between displaying your laptop and the Raspberry Pi.
                 </li>
                 <li>Follow the on-screen instructions to set your country, language and Time-zone.<br />
                     Check the boxes for &#39;Use English language&#39; and &#39;Use US keyboard&#39;.</li>
+                <li>Check “This screen shows a black border around the desktop” if you have a black border.</li>
+                <li>CONNECT TO WSU GUEST ONLY!!!<br />
+                    If prompted make an account and log in.</li>
+
+                <li>When asked to update, click next. <br />
+                    The update will begin, this make take a few minutes. <br />
+                    If asked to restart, do so.</li>
 
                 <li>Open Notepad, choose a password (Please use <code>MagicMirror%</code>).<br />
                     Save your password in a file named  &#39;Readme.txt&#39;; in your  
@@ -243,16 +261,19 @@
                     </p>
                 </li>
 
-                <li>Check “This screen shows a black border around the desktop” if you have a black border.</li>
-                <li>CONNECT TO WSU GUEST ONLY!!! If prompted make an account and log in.</li>
-                <li>When asked to update, click next. The update will begin, this make take a few minutes. If asked to restart, do so.</li>
                 <li>In the upper right corner of the desktop hover over the Wi-Fi signal to determine the IP address. </li>
                 <li>Store this IP address on your laptop in the ReadMe.txt file that contains your password.<br />
                     The IP address will be of the format: 10.20.xx.xx<br />
                     Note that the IP address will change about every 30 days.
                 </li>
-                <li>In the upper left corner, you will see the raspberry icon. click the raspberry icon, then preferences, and Raspberry Pi Configuration.</li>
-                <li>Click the interfaces tab and Enable SSH and VNC.</li>
+                <li>In the upper left corner, you will see the raspberry icon.<br />
+                    Raspberry Icon, aka 
+                    &#39;Menu&#39;<br />
+                    Click the Raspberry icon, <img src="Raspberry.png" width="46" alt="Raspberry" class="img-responsive img-responsive" />
+                    then preferences, and Raspberry Pi Configuration.<br />
+                </li>
+                <li>Click the interfaces tab, Enable SSH and VNC.</li>
+                <li>Reboot the Raspberry Pi so that all changes take effect.</li>
             </ol>
             <hr />
         </div>
@@ -264,6 +285,8 @@
         <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-Screen Shots</a></div>
 
         <div id="Exercise04" class="collapse in  col-lg-12">
+
+            <p>Install scrot (short for <span class="auto-style1">SCR</span>een sh<span class="auto-style1">OT</span>) to take screen shots that document your work.</p>
 
             <ol>
                 <li>On the Raspberry Pi open a terminal window.</li>
@@ -283,7 +306,7 @@
 
                 </li>
 
-                <li>Note that simply typing <code>scrot</code> in the Terminal window takes a scrot (short for SCReen shOT) and stores it in your   Raspberry Pi&#39;s&nbsp; &#39;/home/pi&#39; folder.<br />
+                <li>Note that simply typing <code>scrot</code> in a Terminal window takes a screen shot and stores it in the   Raspberry Pi&#39;s&nbsp; &#39;/home/pi&#39; folder.<br />
                     <p>
                         <a href="ScrotShots.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrotShots.PNG', 'popup'); return false;">
                             <img src="ScrotShots.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a>Scrot Screen Shots
@@ -295,8 +318,8 @@
                     <code>scrot -s</code>
                     then click and drag the mouse to select an area around your name in the text file.
                 </li>
-                <li>Open File Manager, navigate to the /home/pi directory and rename the screen shot to YourName.png</li>
-                <li>Right click the Pi desktop, select &#39;Desktop Preferences&#39;, under the &#39;Desktop&#39; tab set the Layout to &#39;Centre image on screen&#39;, and on Picture choose the YourName.png file.<br />
+                <li>Open File Manager, navigate to the /home/pi directory and rename the screen shot to <strong>YourName.png</strong></li>
+                <li>Right click the Pi desktop, select &#39;Desktop Preferences&#39;, under the &#39;Desktop&#39; tab set the Layout to &#39;Centre image on screen&#39;, and on Picture select the <strong>YourName.png</strong> file.<br />
                     Then click OK.<br />
                     <p>
                         <a href="YourName.png" class="img-responsive img-rounded" target="popup" onclick="window.open('YourName.PNG', 'popup'); return false;">
@@ -316,19 +339,19 @@
 
         <div id="UploadScreenShot" class="collapse in  col-lg-12">
             <p>
-                For this final Exercise, and to complete this assignment please read all of these instructions.<br />
-                You are submitting a screen shot of your work to the appropriate D2L Assignment folder.<br />
-                Make sure that you have the following programs running on your Raspberry Pi, with:
+                For this final Exercise read all of these instructions.<br />
+                You are submitting to the appropriate D2L Assignment folder a screen shot that documents your work.<br />
+                Make sure that the following programs are running on the Raspberry Pi, with:
             </p>
             <ul>
                 <li>Chromium web browser, open to D2L: <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">https://winona.learn.minnstate.edu/</a>, showing this course, with your name in the top right,</li>
                 <li>Rasberry Pi configuration, &#39;Interfaces&#39; tab, showing VNC and SSH enabled,</li>
                 <li>Your name visible in the desktop background,</li>
-                <li>Terminal window, after running the command <code>cat /etc/os-release</code> and <code>scrot</code> ,</li>
+                <li>Terminal window, after running the commands <code>cat /etc/os-release</code> and <code>scrot</code></li>
             </ul>
             <br />
             <p>
-                Your screen shot name is of the format &#39;2019-08-07-125353_1080x1920.scrot.png&#39; and will look something like this:<br />
+                Your screen shot name will be of the format &#39;2019-08-07-125353_1080x1920.scrot.png&#39; and will look something like this:<br />
                 <a href="ConfigurationScreenShot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('ConfigurationScreenShot.PNG', 'popup'); return false;">
                     <img src="ConfigurationScreenShot.PNG" width="300" alt="One Drive" class="img-responsive img-responsive" /></a><br />
                 <br />
@@ -337,7 +360,8 @@
         </div>
         <div class="col-lg-12 text-primary">
             <p>
-                (90) 1. On the Raspberry Pi, use the Chromium browser to go to D2L, then upload your screenshot to the &#39;FormativePi01&#39; D2L Assignment Folder.
+                (90) 1. On the Raspberry Pi, use the Chromium browser to <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">login to D2L</a>.<br />
+                Upload your screenshot to the &#39;FormativePi01&#39; D2L Assignment Folder.
             </p>
 
             <div class="col-lg-12 text-danger">
