@@ -181,6 +181,7 @@ publish/
 # but database connection strings (with potential passwords) will be unencrypted
 # PgP 2/17/2018 we want pub.xml included, there are no databases in this solution; and we need to create a .sln with .publishproj.
 # PgP 7/24/2018 going to try minimalist approach, pubxml will come from initial clone, but do not update GitHub repo
+# PgP 9/17/2018 ignore .pubxml, it is created from .txt file during initial website configuration
 *.pubxml
 *.publishproj
 
