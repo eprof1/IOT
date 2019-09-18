@@ -137,13 +137,14 @@
 
         <div id="Exercise01" class="collapse in  col-lg-12">
             <ol>
-                <li>These steps are performed on your laptop.</li>
+                <li>These steps are performed on your laptop.<br />
+                    Note these files are also available on the WSU network at 
+                    <code>\\mispgp\RaspberryPiAndSoftwareImages\</code></li>
 
                 <li>Open a browser to: <a href="https://www.balena.io/etcher/" class="bg-info text-white" target="_blank">https://www.balena.io/etcher/ </a></li>
 
                 <li>Download and save Etcher to your ' 
-                <code><span id="aPath"></span></code>
-                    <script>document.getElementById("aPath").innerHTML = Path; </script>
+                <code>Downloads</code>
                     ' folder.<br />
                 </li>
 
@@ -161,9 +162,8 @@
 
 
                 <li>Save the ZIP file to your  ' 
-                <code><span id="bPath"></span></code>
-                    <script>document.getElementById("bPath").innerHTML = Path; </script>
-                    ' folder.<br />
+                <code>Downloads</code>
+                    ' folder, and choose<strong> Extract&gt;Extract all</strong> from the menu.<br />
                 </li>
 
             </ol>
@@ -187,7 +187,7 @@
                 <li>Newer laptops without microSD slots will need to see the professor or a TA to get a microSD card reader.</li>
 
                 <li>Open Etcher and make sure it recognizes the microSD card.<br />
-                    If Ether does not appear, you will need to restart your laptop.</li>
+                    If Etcher does not appear, you will need to restart your laptop.</li>
                 <li>Select the ZIP file downloaded earlier and Drag and Drop it into etcher where it says &#39;Select Image&#39;.<br />
                     <p>
                         <a href="FlashMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('FlashMicroSD.PNG', 'popup'); return false;">
@@ -196,7 +196,7 @@
                 </li>
                 <li>Press the Flash button. The process will take several minutes.</li>
                 <li>After the microSD is flashed, open File Explorer on your laptop, navigate to the root of the microSD card (probably E:), right-click and choose &#39;New&gt;Text Document&#39;</li>
-                <li>Enter your name as the name of the text document, such as &#39;PatPaulson.txt&#39;<br />
+                <li>Enter your name as the name of the text document, such as &#39;MyName.txt&#39;<br />
                     This will identify you as the owner of the microSD card in case it is turned into Lost 
                     &amp; Found.</li>
             </ol>
@@ -212,21 +212,13 @@
             <ol>
                 <li>While the microSD card is flashing, locate a USB keyboard and mouse.
                     <br />
-                    Plug them into the Pi at your station (We may not have keyboards and mice for everyone so please share). </li>
+                    Plug them into the Pi at your station. </li>
 
                 <li>Once the flash is complete, remove the microSD card and put it into the Pi.<br />
                     <p>
                         <a href="InsertMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('howtoInsertMicroSD.Pdf', 'popup'); return false;">
                             <img src="InsertMicroSD.PNG" width="100" alt="install microSD into Pi" class="img-responsive img-responsive" /></a>Installing microSD into the Pi<br />
                     </p>
-
-                    <p>
-                        <a href="HOWTOINSERTMICROSD.pdf" class="img-responsive img-rounded" target="popup" onclick="window.open('InsertMicroSD.PNG', 'popup'); return false;">
-                            <img src="HOWTOINSERTMICROSD.pdf" width="300" alt="install microSD into Pi" class="img-responsive img-responsive" /></a>Installing microSD into the Pi<br />
-                    </p>
-
-
-
                 </li>
 
                 <li>Press the power button on the Pi, which should be on top or around the monitor in front of you.<br />
@@ -239,8 +231,10 @@
                 <li>Follow the on-screen instructions to set your country, language and Time-zone.<br />
                     Check the boxes for &#39;Use English language&#39; and &#39;Use US keyboard&#39;.</li>
                 <li>Check “This screen shows a black border around the desktop” if you have a black border.</li>
-                <li>CONNECT TO WSU GUEST ONLY!!!<br />
-                    If prompted make an account and log in.</li>
+                <li>ONLY CONNECT TO WSU GUEST NETWORK!!!<br />
+                    If prompted make an account and log in.<br />
+                    <strong>Note: you may periodically have to open the Raspberry Pi browser to 'winona.edu' and repeat the WSU Guest Network login process.</strong>
+                </li>
 
                 <li>When asked to update, click next.
                     <br />
@@ -248,7 +242,7 @@
                     <br />
                     If asked to restart, do so.</li>
 
-                <li>Open Notepad, choose a password (Please use <code>MagicMirror%</code>).<br />
+                <li>On your laptop, open Notepad, choose a password (Please use <code>MagicMirror%</code>).<br />
                     Save your password in a file named  &#39;Readme.txt&#39;; in your  
                     &#39;  
                 <code><span id="cPath"></span></code>
@@ -269,8 +263,7 @@
                     The IP address will be of the format: 10.20.xx.xx<br />
                     Note that the IP address will change about every 30 days.
                 </li>
-                <li>In the upper left corner, you will see the raspberry icon.<br />
-                    Raspberry Icon, aka 
+                <li>In the upper left corner, you will see the Raspberry Icon, aka 
                     &#39;Menu&#39;<br />
                     Click the Raspberry icon,
                     <img src="Raspberry.png" width="46" alt="Raspberry" class="img-responsive img-responsive" />
@@ -319,11 +312,12 @@
 
                 <li>Select Pi&gt;Accessories&gt;Text Editor, and create a file that contains only your name in 72 point font.</li>
                 <li>In the terminal window type in 
-                    <code>scrot -s</code>
-                    then click and drag the mouse to select an area around your name in the text file.
+                    <code>scrot -s</code> (scrot select)
+                    then click and drag the mouse to select an area around your name in the text file.<br />
+                    Repeat the process until you have a nicely trimmed image, see below.
                 </li>
-                <li>Open File Manager, navigate to the /home/pi directory and rename the screen shot to <strong>YourName.png</strong></li>
-                <li>Right click the Pi desktop, select &#39;Desktop Preferences&#39;, under the &#39;Desktop&#39; tab set the Layout to &#39;Centre image on screen&#39;, and on Picture select the <strong>YourName.png</strong> file.<br />
+                <li>Open File Manager, navigate to the /home/pi directory and rename the screen shot to <strong>MyName.png</strong></li>
+                <li>Right click the Pi desktop, select &#39;Desktop Preferences&#39;, under the &#39;Desktop&#39; tab set the Layout to &#39;Centre image on screen&#39;, and on Picture select the <strong>MyName.png</strong> file.<br />
                     Then click OK.<br />
                     <p>
                         <a href="YourName.png" class="img-responsive img-rounded" target="popup" onclick="window.open('YourName.PNG', 'popup'); return false;">
@@ -365,6 +359,7 @@
         <div class="col-lg-12 text-primary">
             <p>
                 (90) 1. On the Raspberry Pi, use the Chromium browser to <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">login to D2L</a>.<br />
+                <hr />
                 Upload your screenshot to the &#39;IOTP01&#39; D2L Assignment Folder.
             </p>
 
@@ -394,6 +389,17 @@
 
 
         <hr />
+
+        <div class="col-lg-12">
+            <p>Congratulations! You have successfully created and booted a Raspberry Pi single board computer.<br />
+                In the next series of assignments you will explore how to communicate with and control the Raspberry Pi from your laptop.
+            </p>
+            <hr />
+        </div>
+
+
+
+
         <div class="col-lg-12 text-danger text-center">
             <h2>WHEN DONE<br />
                 SHUTDOWN THE RASPBERRY PI<br />
