@@ -183,7 +183,7 @@
                 <li>Turn on the power and allow the Raspberry Pi to boot up.</li>
 
                 <li>On the monitor press the colored dot to display the Pi desktop.<br />
-                    Because you do not have a keyboard and mouse (input devices) connected to the Raspberry Pi, you cannot interact with it.<br />
+                    If you do not have a keyboard and mouse (input devices) connected to the Raspberry Pi, you cannot interact with it.<br />
                     This is where the need arises to run the VNC Viewer.<br />
                     And this is why you enabled VNC when you originally configured your Raspberry Pi.
                 </li>
@@ -205,11 +205,27 @@
             <ol>
                 <li>These steps are performed on your laptop.</li>
 
-                <li>If VNC Viewer is not running, start it per the instructions in Excercise 1.</li>
+                <li><p>
+                    Your laptop MUST be connected to the WSU network with a WIRED connection, a wireless connection will NOT work.<br />
+                    Look for this icon in your task tray:
+                <img src="WiredNetwork.PNG" alt="wired connection" class="img-responsive img-responsive" />Wired Network Connection Icon
+                    </p>
+                </li>
+
+                <li>The Raspberry Pi must be connected to the WSU Guest wireless.<br />
+                    Do NOT connect to the Warrior or Wazoo wireless networks.
+                </li>
+
+                <li>On the Raspberry Pi you MUST open the Chromium browser and verify that you can  reach a website such as: <br />
+                    <code>google.com</code><br />
+                    If not, you will be redirected to a web authentication page, where you can create a WSU guest account, and logon.
+                </li>
+
+                <li>If VNC Viewer is not running on your laptop, start it per the instructions in Excercise 1.</li>
 
                 <li>
                     <p>
-                        In the address bar at the top, enter the IP address of your Raspberry Pi that you saved from your previous assignment.
+                        In the VNC Viewer address bar at the top, enter the IP address of your Raspberry Pi that you saved from your previous assignment.<br />
                         <a href="VNCIPAddress.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('VNCIPAddress.PNG', 'popup'); return false;">
                             <img src="VNCIPAddress.PNG" width="300" alt="enter RPi IP address" class="img-responsive img-responsive" /></a>Enter IP Address<br />
                     </p>
@@ -219,15 +235,34 @@
                 <li>An Authenication dialog box will appear.<br />
                     Enter your username and password for the Raspberry Pi.<br />
                     username: pi<br />
-                    password: <strong>MagicMirror%</strong>
+                    password: <strong>MagicMirror%</strong><br />
+                    Check the &#39;Remember password&#39; box.<br />
                     Click OK.<br />
                     <p>
                         <a href="VNCLogin.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('VNCLogin.PNG', 'popup'); return false;">
                             <img src="VNCLogin.PNG" width="300" alt="logon to RPi" class="img-responsive img-responsive" /></a>Login<br />
                     </p>
+
                 </li>
 
-                <li>Choose Menu&gt;Accessories&gt;Text Editor<br />
+
+
+            </ol>
+            <hr />
+        </div>
+
+
+
+        <!--Exercise 4-->
+
+        <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-VNC File Transfer</a></div>
+
+        <div id="Exercise04" class="collapse in  col-lg-12">
+
+            <ol>
+
+                <li>These steps are done on your laptop, in VNC, viewing the Raspberry Pi desktop.<br />
+                    Choose Menu&gt;Accessories&gt;Text Editor<br />
                     Enter your name and today's date.</li>
 
                 <li>Choose File&gt;Save<br />
@@ -287,11 +322,22 @@
 
 
 
-        <!--Exercise 4-->
 
-        <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-ScreenShot</a></div>
 
-        <div id="Exercise04" class="collapse in  col-lg-12">
+
+
+
+
+
+
+
+
+
+        <!--Exercise 5-->
+
+        <div class="col-lg-12"><a href="#Exercise05" class="btn btn-info" data-toggle="collapse">Exercise 5-ScreenShot</a></div>
+
+        <div id="Exercise05" class="collapse in  col-lg-12">
 
             <p>Use the Snipping Tool on your laptop to take a screenshot shown above to document your work.</p>
 
@@ -364,7 +410,24 @@
         </div>
 
 
+
+
+
         <hr />
+
+
+        <hr />
+
+        <div class="col-lg-12">
+            <p>Congratulations! You have successfully connected via VNC to a Raspberry Pi single board computer and transferred a file.<br />
+                In the next assignment you will explore how to communicate with the Raspberry Pi from your laptop using a command line interface.
+            </p>
+            <hr />
+        </div>
+
+
+
+
         <div class="col-lg-12 text-danger text-center">
             <h2>WHEN DONE<br />
                 SHUTDOWN THE RASPBERRY PI<br />
