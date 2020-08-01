@@ -87,7 +87,9 @@
 
             <p>
                 <a href="RaspberryPi3BPlus.png" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspberryPi3BPlus.png', 'popup'); return false;">
-                    <img src="RaspberryPi3BPlus.png" width="300" alt="Raspberry Pi 3 B+" class="img-responsive img-responsive" /></a>Raspberry Pi 3 B+
+                    <img src="RaspberryPi3BPlus.png" width="300" alt="Raspberry Pi 3 B+" class="img-responsive img-responsive" />
+                </a>
+                <br />Raspberry Pi 3 B+
             </p>
 
 
@@ -125,7 +127,9 @@
 
             <p>
                 <a href="RPi3Pinout.png" class="img-responsive img-rounded" target="popup" onclick="window.open('RPi3Pinout.png', 'popup'); return false;">
-                    <img src="RPi3Pinout.png" width="300" alt="Raspberry Pi 3" class="img-responsive img-responsive" /></a>Raspberry Pi 3 B+
+                    <img src="RPi3Pinout.png" width="300" alt="Raspberry Pi 3" class="img-responsive img-responsive" />
+                </a>
+                Raspberry Pi 3 B+
             </p>
 
             <hr />
@@ -138,9 +142,21 @@
         <div id="Exercise01" class="collapse in  col-lg-12">
             <ol>
                 <li>These steps are performed on your laptop.<br />
-                    Note the required files (Raspbian image, Balena Etcher) are available on the WSU network at 
-                    <code>\\mispgp\RaspberryPiAndSoftwareImages\</code><br />
-                    Save the Raspberry Pi image file to your Downloads folder. Do NOT place it in your OneDrive folder.  That will cause problems, as it is a large (1.1GB) file.
+                    Download the required files (Raspbian image, Balena Etcher) from the WSU network at 
+                    <code>\\mispgp\RaspberryPiAndSoftwareImages\</code> to your <code> Downloads</code> folder<br />
+
+                    <hr />
+                    Alternatively you can obtain the software at these websites:<br />
+                    Balena Etcher:  <a href="https://www.balena.io/etcher/" class="bg-info text-white" target="_blank">https://www.balena.io/etcher/ </a> <br />
+                    Raspbian Operating System: <a href="https://www.raspberrypi.org/downloads/raspbian/" class="bg-info text-white" target="_blank">https://www.raspberrypi.org/downloads/raspbian/</a>.<br />
+                                        <p>
+                        <a href="RaspbianWithDesktop.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspbianWithDesktop.PNG', 'popup'); return false;">
+                            <img src="RaspbianWithDesktop.PNG" width="300" alt="Rasbian with desktop" class="img-responsive img-responsive" /></a> Raspbian With Desktop
+                    </p>
+
+                    <hr />
+
+                    Save the Raspberry Pi image file to your Downloads folder. Do NOT place it in any OneDrive folder or sub folder.  That will cause problems, as it is a large (1.1GB) file.
                     <p>
                         <a href="Software.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Software.PNG', 'popup'); return false;">
                             <img src="Software.PNG" width="300" alt="Required software" class="img-responsive img-responsive" /></a> Required Software
@@ -148,31 +164,7 @@
                 <hr />
                 </li>
 
-                <li>Or you can open a browser to: <a href="https://www.balena.io/etcher/" class="bg-info text-white" target="_blank">https://www.balena.io/etcher/ </a></li>
-
-                <li>Download and save Etcher to your ' 
-                <code>Downloads</code>
-                    ' folder.<br />
-                </li>
-
                 <li>Use File Explorer, find the Etcher install file, and double-click to install Etcher.</li>
-
-                <li>Open a browser to: <a href="https://www.raspberrypi.org/downloads/raspbian/" class="bg-info text-white" target="_blank">https://www.raspberrypi.org/downloads/raspbian/</a>.<br />
-                </li>
-
-                <li>Download the latest ZIP file of the Raspbian Operating System with desktop<br />
-                    <p>
-                        <a href="RaspbianWithDesktop.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspbianWithDesktop.PNG', 'popup'); return false;">
-                            <img src="RaspbianWithDesktop.PNG" width="300" alt="Rasbian with desktop" class="img-responsive img-responsive" /></a> Raspbian With Desktop
-                    </p>
-                <hr />
-                </li>
-
-
-                <li>Save the ZIP file to your  ' 
-                <code>Downloads</code>
-                    ' folder, and choose<strong> Extract&gt;Extract all</strong> from the menu.<br />
-                </li>
 
             </ol>
             <hr />
@@ -189,10 +181,12 @@
             <ol>
                 <li>These steps are performed on your laptop.</li>
 
-                <li>Install the microSD card into the microSD card slot on the right side of your laptop.<br />
+                <li>Install the microSD card into a USB or USB-C reader and plug into your laptop.<br />
+                    <p>
+                        <a href="USBreaders.jpg" class="img-responsive img-rounded" target="popup" onclick="window.open('USBreaders.jpg', 'popup'); return false;">
+                            <img src="USBreaders.jpg" width="300" alt="flash raspbian to microSD" class="img-responsive img-responsive" /></a>Flash Raspbian to microSD<br />
+                    </p>
                 </li>
-
-                <li>Newer laptops without microSD slots will need to see the professor or a TA to get a microSD card reader.</li>
 
                 <li>Open Etcher and make sure it recognizes the microSD card.<br />
                     If Etcher does not appear, you will need to restart your laptop.</li>
@@ -230,7 +224,7 @@
                     <br />
                     Plug them into the Pi at your station. </li>
 
-                <li>Once the flash is complete, remove the microSD card and put it into the Pi.<br />
+                <li>Once the flash is complete and verified, remove the microSD card and put it into the Pi.<br />
                     <p>
                         <a href="InsertMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('howtoInsertMicroSD.Pdf', 'popup'); return false;">
                             <img src="InsertMicroSD.PNG" width="100" alt="install microSD into Pi" class="img-responsive img-responsive" /></a>Installing microSD into the Pi<br />
