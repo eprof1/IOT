@@ -23,7 +23,8 @@
 <body class="container-fluid" onload="setVariables()">
 
 	<div id="xHeading" class=" col-lg-12">
-		<script>document.getElementById("xHeading").innerHTML = pageHeading; </script>
+		<!-- <script>document.getElementById("xHeading").innerHTML = pageHeading; </script>  -->
+		<h1 class="text-center">IoT Assignment List</h1>
 	</div>
 
 
@@ -36,9 +37,10 @@
 		<hr />
 	</div>
 
-	<div class="col-lg-12">
+	<!-- not needed right now, PgP 4/15/2021
+		<div class="col-lg-12">
 
-
+	
 		<form class="container-fluid col-lg-4" action="https://eprofessor.azurewebsites.net/code/SubmitAttendance.asp" method="post" name="frmAttendance" id="frmAttendance">
 
 			<input class="form-control" name="FirstName" id="FirstName3" type="hidden" value="default first name">
@@ -49,21 +51,27 @@
 			<input class="form-control" name="class" id="class3" value="xClass" type="hidden">
 			<input class="form-control" name="section" id="section3" value="default" type="hidden">
 			<input class="form-control" name="assignment" id="assignment3" value="Attendance" type="hidden">
-			<input name="InstID" id="InstID3" value="00617282" type="hidden">
+			<input name="InstID" id="InstID3" value="00617282" type="hidden">  
+		-->
 
 			<!-- PgP 5/4/2020 attendance not required for online class
 			<input class="text-danger btn-block btn-lg" type="submit" value="Submit Attendance" />
 				-->
+		<!--
 			<hr />
 
-		</form>
+		</form>  -->
 
 		<!-- PgP 2/28/2020 End of attendance form  -->
 
-
+<!--
 		<form class="container-fluid col-lg-4" action="https://eprofessor.azurewebsites.net/code/grading/CourseAssignmentSubmissions.asp" method="post" name="frmAssignment" id="frmAssignment">
+-->
+		
 
 			<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+
+		<!--
 
 			<input class="form-control" name="FirstName" id="FirstName" type="hidden" value="default first name">
 			<input class="form-control" name="LastName" id="LastName" type="hidden" value="default last name">
@@ -74,23 +82,27 @@
 			<input class="form-control" name="section" id="section" value="default" type="hidden">
 			<input class="form-control" name="assignment" id="assignment" value="Attendance" type="hidden">
 			<input name="InstID" id="InstID" value="00617282" type="hidden">
+		-->
 
-			<!-- -end-Student, class and assignment information-end -->
+			<!-- -end-Student, class and assignment information-end 
 			<input class="text-danger btn-block btn-lg" name="Submit" value="Run Assignment Submissions Report" type="submit">
 			<hr />
 
 		</form>
+-->
 
-
-		<div class="text-center">
+		<!--
+		<div class="text-center"> -->
 			<!-- PgP 3/2/2020 below is  Java Script generated mail to link -->
+		<!--
 			<div id="emailStudent"></div>
 			<script>document.getElementById("emailStudent").innerHTML = xMailTo</script>
 			<hr />
 		</div>
 
 
-	</div>
+	</div> -->
+
 	<p>
 		Listing of current Internet of Things assignments<br />
 	</p>
