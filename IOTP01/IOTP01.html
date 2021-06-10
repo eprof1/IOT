@@ -151,32 +151,31 @@
         <div id="Exercise01" class="collapse in  col-lg-12">
             <ol>
                 <li>These steps are performed on your laptop.<br />
-                    Download the required files (Raspbian image, Balena Etcher) from the WSU network at 
+                    Download the required files (Raspbian image, Raspberry Pi Imager) from the WSU network at 
                     <code>\\mispgp\RaspberryPiAndSoftwareImages\</code> to your <code> Downloads</code> folder<br />
-                    or obtain this software from Professor Paulson&#39;s OneDrive ReadOnly folder, <a href="https://mnscu-my.sharepoint.com/:f:/g/personal/wp8798rh_minnstate_edu/Ellwjc3DXPdBlFO2tO9Wp-gBHfqOYdgSjDwVxdjZnsoVnQ?e=9IixBd" class="bg-info text-white" target="_blank">RaspberryPiAndSoftwareImages</a>
+                    or obtain this software from Professor Paulson&#39;s OneDrive ReadOnly folder, <a href="https://mnscu-my.sharepoint.com/:f:/g/personal/wp8798rh_minnstate_edu/Ellwjc3DXPdBlFO2tO9Wp-gBHfqOYdgSjDwVxdjZnsoVnQ?e=9IixBd">RaspberryPiAndSoftwareImages</a>
 
                     <hr />
                     Alternatively you can obtain the software at these websites:<br />
-                    Balena Etcher:  <a href="https://www.balena.io/etcher/" class="bg-info text-white" target="_blank">https://www.balena.io/etcher/ </a> <br />
+                    Raspberry Pi Imager: <a href="https://www.raspberrypi.org/software/">https://www.raspberrypi.org/software/</a><br />
                     Raspbian Operating System: <a href="https://www.raspberrypi.org/downloads/raspbian/" class="bg-info text-white" target="_blank">https://www.raspberrypi.org/downloads/raspbian/</a>.<br />
                     VNC Viewer:
                                         <a href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a>&nbsp;
                                         <p>
                         <a href="RaspbianWithDesktop.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('RaspbianWithDesktop.PNG', 'popup'); return false;">
-                            <img src="RaspbianWithDesktop.PNG" width="300" alt="Rasbian with desktop" class="img-responsive img-responsive" /></a> Raspbian With Desktop
+                            <img src="RaspberryPiImager.png" width="300" alt="Rasbian with desktop" class="img-responsive img-responsive" /></a> Raspbian Pi Imager
                     </p>
 
                     <hr />
 
-                    Save the Raspberry Pi image file to your Downloads folder. Do NOT place it in any OneDrive folder or sub folder.  That will cause problems, as it is a large (1.1GB) file.
-                    <p>
+                    Save the Raspberry Pi image file to your Downloads folder. Do NOT place it in any OneDrive folder or sub folder.  That will cause problems, as it is a large (1.6GB) file. <p>
                         <a href="Software.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Software.PNG', 'popup'); return false;">
                             <img src="Software.PNG" width="300" alt="Required software" class="img-responsive img-responsive" /></a> Required Software
                     </p>
                 <hr />
                 </li>
 
-                <li>Use File Explorer, find the Etcher install file, and double-click to install Etcher.</li>
+                <li>Use File Explorer, find the Imager install file, and double-click to install Raspberry Pi Imager.</li>
 
             </ol>
             <hr />
@@ -200,18 +199,16 @@
                     </p>
                 </li>
 
-                <li>Open Etcher and make sure it recognizes the microSD card.<br />
-                    If Etcher does not appear, you will need to restart your laptop.</li>
-                <li>Select the ZIP file downloaded earlier and Drag and Drop it into etcher where it says &#39;Select Image&#39;.<br />
+                <li>Open Imager and make sure it recognizes the microSD card under &quot;Choose Storage&quot;.<br />
+                    If Imager does not appear, you will need to restart your laptop.</li>
+                <li>Select &quot;Choose OS&quot; and scroll to the bottom until you see &quot;Use Custom&quot;. Select &quot;Use Custom&quot; and select your Raspbian Image from your Downloads folder. <br />
                     <p>
                         <a href="FlashMicroSD.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('FlashMicroSD.PNG', 'popup'); return false;">
                             <img src="FlashMicroSD.PNG" width="300" alt="flash raspbian to microSD" class="img-responsive img-responsive" /></a>Flash Raspbian to microSD<br />
                     </p>
                 </li>
-                <li>Press the Flash button. The process will take several minutes.</li>
-                <li>After the microSD is flashed, it is &#39;auto-ejected&#39;.&nbsp; <br />
-                    Remove and replace the USB microSD reader.<br />
-                    Open File Explorer on your laptop, navigate to the D: drive, labeled &#39;boot&#39;.<br />
+                <li>Press the Write button. The process will take several minutes.</li>
+                <li>After the microSD is flashed, open File Explorer on your laptop, navigate to the D: drive, labeled &#39;boot&#39;.<br />
                     This is the microSD card.<br />
                     Right-click and choose &#39;New&gt;Text Document&#39;</li>
                 <li>Enter your name as the name of the text document, such as &#39;MyName.txt&#39;<br />
@@ -248,16 +245,16 @@
                 <li>Press the power button on the Pi, which should be on top or around the monitor in front of you.<br />
                     You should see a red light on the Pi, which indicates power is on.</li>
 
-                <li>On the landscape monitor, lower right corner, press the button with the colored dot.
+                <li>On your monitor press the button with the colored dot.
                     <br />
                     Note that repeatedly pressing this button switches the monitor between displaying your laptop and the Raspberry Pi.
                 </li>
                 <li>Follow the on-screen instructions to set your country, language and Time-zone.<br />
                     Check the boxes for &#39;Use English language&#39; and &#39;Use US keyboard&#39;.</li>
                 <li>Check “This screen shows a black border around the desktop” if you have a black border.</li>
-                <li>ONLY CONNECT TO WSU GUEST WiFi NETWORK!!!<br />
-                    <a href="https://eprofessor.azurewebsites.net/HelpFiles/WSU_Guest_WiFi/GuestWiFi.html" class="bg-info text-white" target="_blank">Follow these instructions</a> to make an account and log onto the WSU Guest WiFi network.<br />
-                    <strong>Note: you may periodically have to open the Raspberry Pi browser to 'www.winona.edu' and repeat the WSU Guest Network login process.</strong>
+                <li>ONLY CONNECT TO WSU GUEST NETWORK!!!<br />
+                    If prompted make an account and log in.<br />
+                    <strong>Note: you may periodically have to open the Raspberry Pi browser to 'winona.edu' and repeat the WSU Guest Network login process.</strong>
                 </li>
 
                 <li>When asked to update, click next.
