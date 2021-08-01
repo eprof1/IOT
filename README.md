@@ -15,8 +15,8 @@ Assignment Links
 * <a href="https://eprof1.github.io/IOT/IOT08/IOT08.html" target="_blank">IOT08-RPi,  </a>
 * <a href="https://eprof1.github.io/IOT/IOT09/IOT09.html" target="_blank">IOT09-RPi, </a>
 * <a href="https://eprof1.github.io/IOT/IOT10/IOT10.html" target="_blank">IOT10-RPi, </a>
-* <a href="https://eprof1.github.io/IOT/IOT11/IOT11.html" target="_blank">IOT11-RPi, </a>
-* <a href="https://eprof1.github.io/IOT/IOT12/IOT12.html" target="_blank">IOT12-RPi, </a>
+* <a href="https://eprof1.github.io/IOT/IOT_TTL/IOT_TTL.html" target="_blank">IOT_TTL-RPi, USB TTL </a>
+* <a href="https://eprof1.github.io/IOT/IOT_Zoom/IOT_Zoom.html" target="_blank">IOT_Zoom-RPi, Zoom</a>
 
 PgP 7/31/2021
 * added assignment table
