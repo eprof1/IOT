@@ -18,7 +18,8 @@ Assignment Links
 * <a href="https://eprof1.github.io/IOT/IOT11/IOT11.html" target="_blank">IOT11-RPi, </a>
 * <a href="https://eprof1.github.io/IOT/IOT12/IOT12.html" target="_blank">IOT12-RPi, </a>
 
-PgP 7/28/2021
+PgP 7/31/2021
+* added assignment table
 
 
 PgP 7/11/2019
