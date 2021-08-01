@@ -1,7 +1,7 @@
 Assignment Links
-* <a href="https://eprof1.github.io/IOT/IOTP01/IOTP01.html" target="_blank">IOTP01-Introduction to Computer Networks</a>
-* <a href="https://eprof1.github.io/IOT/IOTP02/IOTP02.html" target="_blank">IOTP02-Network Hardware Essentials</a>
-* <a href="https://eprof1.github.io/IOT/IOTP03/IOTP03.html" target="_blank">IOTP03-Network Topologies and Technologies</a>
+* <a href="https://eprof1.github.io/IOT/IOTP01/IOTP01.html" target="_blank">IOTP01-Setting Up a Raspberry Pi</a>
+* <a href="https://eprof1.github.io/IOT/IOTP02/IOTP02.html" target="_blank">IOTP02-RPi VNC</a>
+* <a href="https://eprof1.github.io/IOT/IOTP03/IOTP03.html" target="_blank">IOTP03-RPi and PuTTY</a>
 * <a href="https://eprof1.github.io/IOT/IOT04/IOT04.html" target="_blank">IOT04-Network Media</a>
 * <a href="https://eprof1.github.io/IOT/IOT05/IOT05.html" target="_blank">IOT05-Network Protocols</a>
 * <a href="https://eprof1.github.io/IOT/IOT06/IOT06.html" target="_blank">IOT06-IP Addressing</a>
