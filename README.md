@@ -18,6 +18,8 @@ Assignment Links
 * <a href="https://eprof1.github.io/IOT/IOTP_TTL/IOTP_TTL.html" target="_blank">IOT_TTL-RPi, USB TTL </a>
 * <a href="https://eprof1.github.io/IOT/IOTP_Zoom/ZoomViaRPiChromiumBrowser_TerminalScreenShare.PNG" target="_blank">IOT_Zoom-RPi, Zoom-not working yet</a>
 * <a href="https://eprof1.github.io/IOT/NR01/NR01.html" target="_blank">NR01-Node-RED on RPi</a>
+* <a href="https://eprof1.github.io/IOT/NR02/NR02.html" target="_blank">NR02-Node-RED Flows</a>
+* <a href="https://eprof1.github.io/IOT/NR03/NR03.html" target="_blank">NR03-Node-RED sensors</a>
 
 PgP 7/31/2021
 * added assignment table
