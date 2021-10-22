@@ -86,8 +86,8 @@
         <div id="Objectives" class=" collapse in col-lg-12">
 
             <p>
-                <a href="Uno.jpg" class="img-responsive img-rounded" target="popup" onclick="window.open('uno.jpg', 'popup'); return false;">
-                    <img src="Uno.jpg" width="300" alt="Inland UNO R3" class="img-responsive img-responsive" /></a>Arduino UNO R3
+                <a href="Uno.jpg" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/uno.jpg', 'popup'); return false;">
+                    <img src="Images/Uno.jpg" width="300" alt="Inland UNO R3" class="img-responsive img-responsive" /></a>Arduino UNO R3
             </p>
 
 
@@ -113,8 +113,8 @@
         </div>
 
         <p>
-            <a href="ArduinoPinout.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('ArduinoPinout.png', 'popup'); return false;">
-                <img src="ArduinoPinout.PNG" width="300" alt="Arduino Pinout" class="img-responsive img-responsive" /></a>Arduino Pinout
+            <a href="ArduinoPinout.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/ArduinoPinout.png', 'popup'); return false;">
+                <img src="Images/ArduinoPinout.PNG" width="300" alt="Arduino Pinout" class="img-responsive img-responsive" /></a>Arduino Pinout
         </p>
 
 
@@ -145,51 +145,35 @@
 
             <p>
                 The &#39;sketches&#39; or programs that run on an Arduino Uno can be created on many devices-a laptop or Raspberry Pi.<br />
-                In this exercise you will install the Arduino UNO Integrated Development Environment (IDE) onto your Raspberry Pi.
+                In this exercise you will install the Arduino UNO Integrated Development Environment (IDE) onto your Windows Laptop.
             </p>
             <ol>
 
-                <li>Make sure to connect the Raspberry Pi to the Arduino UNO using a USB A to B cable.</li>
-                <li>Boot the Raspberry Pi, and ensure it has internet access.</li>
-                <li>You may notice that after the Raspberry Pi boots, that an orange light on the Arduino UNO begins flashing.<br />
-                    This is not a problem, the UNO is running a default sketch that was uploaded previously.
-                </li>
-                <li>Open a terminal window.<br />
-                    Type in <code>sudo apt-get update</code>, press Enter.<br />
-                    When that completes, type in <code>sudo apt-get upgrade</code>, press Enter, and update the Raspberry Pi.
-                </li>
-                <li>To install the Arduino IDE, in the terminal window type <code>sudo apt-get install arduino</code>, and press Enter.<br />
-                    Type 
-                    &#39;y&#39; and press Enter when asked to continue with the install, which is about 130MB.</li>
-                <li>-- WHEN DONE --, the Arduino IDE can be accessed from Menu&gt;Programming<br />
+                <li>The Arduino Uno should be connected to your laptop&#39;s USB-C dock. You can verify this by looking at the back of the landscape monitor.</li>
+                <li>Download the Arduino software from <a href="https://www.arduino.cc/en/software">Arduino&#39;s website</a> or from Dr. Paulson&#39;s Read-Only Folder.</li>
+                <li>Follow the instructions and accept all prompts to install the Arduino software. If it does not launch after installation, press the Windows button and search &quot;Arduino&quot;<br />
                     <p>
-                        <a href="UnoIDE.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('UnoIDE.PNG', 'popup'); return false;">
-                            <img src="UnoIDE.PNG" width="300" alt="Arduino UNO IDE" class="img-responsive img-responsive" /></a>Arduino UNO IDE
-                    </p>
+                        <a href="UnoIDE.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/UnoIDE.PNG', 'popup'); return false;">
+                            <img src="Images/UnoIDE.PNG" width="300" alt="Arduino UNO IDE" class="img-responsive img-responsive" /></a>Arduino UNO</p>
 
                 </li>
-                <li>On the Raspberry Pi open the Arduino IDE<br />
-                    It will display a blank sketch, with a name based on the current date.
-                </li>
 
-                <li>In the lower right corner you will see &#39;Arduino Uno on COM1&#39;.<br />
-                    From the menu choose Tools&gt;Serial Port&gt;/dev/ttyACM0<br />
-                    If this does not show up, you may need to try again later when you compile and try to upload.<br />
-                    This connects the Raspberry Pi to the Arduino UNO via the USB cable.
-                </li>
+                <li>In the lower right corner you will see &#39;Arduino Uno on COMx&#39;. The com number may change from workstation to workstation.</li>
+                <li>If it does not appear on startup choose Tools&gt;Port, then select the COM# that follows with (Arduino Uno)</li>
 
-                <li>From the menu choose File&gt;Examples&gt;01.Basics&gt;Blink<br />
-                    The code that appears is well commented.<br />
-                    Read the comments and the code.<br />
-                    The program creates a variable to manipulate an LED, then enters an infinite loop that turns the LED on for 1 second, and off for 1 second, ad infinitum.
-                </li>
+            </ol>
+            <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="UnoIDE.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/SelectArduino.png', 'popup'); return false;">
+                            <img src="Images/SelectArduino.png" width="300" alt="Selecting Uno" class="img-responsive img-responsive" /></a>Selecting the Arduino Uno</p>
+            <ol>
 
-                <li>To verify the code syntax is correct, from the menu choose Sketch&gt;Verify / Compile.<br />
-                    In the status window at the bottom you should see a &#39;Done compiling&#39; message.<br />
-                    If not, time to trouble-shoot.
+                <li>From the menu choose File&gt;Examples&gt;01.Basics&gt;Blink<br />The code that appears is well commented.<br />Read the comments and the code.<br />The program creates a variable to manipulate an LED, then enters an infinite loop that turns the LED on for 1 second, and off for 1 second, ad infinitum.
+                </li>
+                <li>To verify the code syntax is correct, click the verify checkmark on left hand side.<br />In the status window at the bottom you should see a &#39;Done compiling&#39; message.<br />If not, time to trouble-shoot.
                     <p>
-                        <a href="VerifySketch.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('VerifySketch.PNG', 'popup'); return false;">
-                            <img src="VerifySketch.PNG" width="300" alt="compiled sketch" class="img-responsive img-responsive" /></a> Sketch Compiled Properly
+                        <a href="VerifySketch.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/VerifySketch.PNG', 'popup'); return false;">
+                        <img src="Images/VerifySketch.PNG" width="300" alt="compiled sketch" class="img-responsive img-responsive" /></a> Sketch Compiled Properly
                     </p>
                 </li>
 
@@ -219,8 +203,8 @@
                     &#39;Done uploading.&#39;<br />
                     The orange light will be blinking-on 1 second, off 1 second, until power is removed, or another sketch is uploaded.<br />
                     <p>
-                        <a href="BlinkyLight.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('BlinkyLight.PNG', 'popup'); return false;">
-                            <img src="BlinkyLight.PNG" width="300" alt="Blinking Light" class="img-responsive img-responsive" /></a> Blinking Light
+                        <a href="BlinkyLight.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/BlinkyLight.PNG', 'popup'); return false;">
+                            <img src="Images/BlinkyLight.PNG" width="300" alt="Blinking Light" class="img-responsive img-responsive" /></a> Blinking Light
                     </p>
                     <br />
                     Note: the green light at the right side of the UNO indicates power is applied to the board.
@@ -258,17 +242,14 @@
                     Your sketch will look something like this:<br />
 
                     <p>
-                        <a href="Blink01.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Blink01.PNG', 'popup'); return false;">
-                            <img src="Blink01.PNG" width="300" alt="Modified Blinking Light Program" class="img-responsive img-responsive" /></a>Modified Blinking Light Program<br />
+                        <a href="Blink01.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/Blink01.PNG', 'popup'); return false;">
+                            <img src="Images/Blink01.PNG" width="300" alt="Modified Blinking Light Program" class="img-responsive img-responsive" /></a>Modified Blinking Light Program<br />
                     </p>
 
                 </li>
 
                 <li>When you are satisfied that your sketch works, choose File&gt;Upload to compile and upload the new sketch to the UNO.<br />
-                    Note that if you get an error message, you may need to choose Tools
-                    &gt;Serial Port&gt;/dev/tty/ACM0
-                    <br />
-                    Or you may need to do some troubleshooting.
+                    Note that if you get an error message, you may need to do some troubleshooting.
                 </li>
             </ol>
             <hr />
@@ -283,18 +264,15 @@
         <div id="Exercise04" class="collapse in  col-lg-12">
 
             <ol>
-                <li>On the Raspberry Pi make sure the Arduino IDE and your name on the desktop are visible.</li>
-
-                <li>In the terminal window type in 
-                    <code>scrot -s</code>
-                    then click and drag the mouse to select an area from the top left showing the VNC icon and title bar, also include your name on the desktop and the Arduino IDE.
-                </li>
-                <li>Open File Manager, navigate to the /home/pi directory and rename the screen shot <strong>IOTA01.png</strong></li>
                 <li>
                     <p>
-                        Your screen shot will look something like this:<br />
-                        <a href="IOTA01.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('IOTA01.PNG', 'popup'); return false;">
-                            <img src="IOTA01.PNG" width="300" alt="screen shot format" class="img-responsive img-responsive" /></a>Screen Shot Format<br />
+                        Take a screenshot of the Arduino program with your name commented after &quot;void loop(){&quot;. You can enter comments by typing &quot;//&quot;</p>
+                </li>
+                <li>
+                    <p>
+                        Take a screenshot using Snipping Tool, or Snip &amp; Sketch<br />
+                        <a href="IOTA01.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/IOTA01.PNG', 'popup'); return false;">
+                            <img src="Images/IOTA01.PNG" width="300" alt="screen shot format" class="img-responsive img-responsive" /></a>Screen Shot Format<br />
                     </p>
                 </li>
             </ol>
@@ -318,7 +296,7 @@
 
         <div class="col-lg-12 text-primary">
             <p>
-                (90) 1. On the Raspberry Pi, use the Chromium browser to <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">login to D2L</a>.<br />
+                (90) 1. On your laptop use your browser to <a href="https://winona.learn.minnstate.edu/" class="bg-info text-white" target="_blank">login to D2L</a>.<br />
                 Upload your screenshot to the &#39;IOTA01&#39; D2L Assignment Folder.
             </p>
 
